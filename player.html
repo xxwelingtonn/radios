@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js ie8 ie" lang="pt_BR"> <![endif]-->
+<!--[if IE 9]><html class="no-js ie9 ie" lang="pt_BR"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="pt_BR">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>host Águia</title>
+		<meta name="description" content="Streaming e hospedagem">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale = 1.0">
+
+		<link id="theme" rel="stylesheet" href="02assets/css/webradio.css" type="text/css">
+		<link rel="shortcut icon" href="02assets/images/favicon_blue.png">
+        
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:url" content="http://hostaguia.com/">
+	<meta property="og:title" content="Host Águia">    
+    <meta property="og:description" content="Streaming e hospedagem"> 
+    <meta property="og:locale" content="pt_BR">
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="02assets/js/modernizr.js"></script>
+		<script src="02assets/js/lastfm.api.cache.js"></script>
+		<script src="02assets/js/bootstrap.min.js"></script>
+		<script src="02assets/js/jquery.mobile.js"></script>
+		<script src="02assets/js/jquery.jplayer.js"></script>
+                
+		<script type="text/javascript">  
+			var accounttype = 'pro';
+            var streamhost = '11.stmip.in';
+            var streamport = '27222';
+            var audioformat = 'mp3';
+            var autoplay = 'true';
+            var streamurl = {'mp3':'http://11.stmip.in:27222/stream'};
+            var streamtype = 'soutcast';
+            var statusurl = '02assets/status_cstrj.xsl';
+            var casterlogo = '0';
+             var casterlogo = '02assets/images/webradiogratis.png';
+			var ismobile = false;
+			var proservername = 'pro02';
+            var prousername = 'wslptdpk';
+			var plsolution = 'html, flash';
+				if (device.mobile()===true||device.tablet()===true)
+	{
+		ismobile=true;
+	$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '02assets/webradio.mobile.css') );
+	}
+		</script>
+		<script src="02assets/js/player_icecast.js"></script>
+		<script src="02assets/js/player.js"></script>
+
+	</head>
+	<body>        
+		<div id="wrapper">
+			<div id="footer">
+				<div style="margin-top:-5%" id="radio-player">
+					<div id="RadioPlayer"></div>
+					<div class="control">
+						<a class="play" style="display: none;"></a>
+						<a class="stop" style="display: block;"><div class="spinner"></div></a>
+					</div>
+					<div class="volume">
+						<a class="mute"></a>
+						<div class="bar">
+							<div class="vol" style="width:50px;"></div>
+						</div>
+						<br />
+						<span id="nowplaying">Você está ouvindo uma transmissão ao vivo ...</span>
+					</div>
+				</div>
+				<div id="playlists">
+					<div class='dsk'>
+					OUÇA EM OUTROS DISPOSITIVOS:
+					<br />
+                    
+					<a target="_blank" href="http://11.stmip.in/player/27222/android.m3u" title="Android"><i class="icon android2"></i></a>                    
+
+					<a target="_blank" href="http://11.stmip.in/player/27222/mediaplayer" title="Android"><i class="icon win"></i></a> 
+                    
+					<a target="_blank" href="http://11.stmip.in/player/27222/iphone.m3u" title="Android"><i class="icon ios2"></i></a>                                   
+                    <a target="_blank" href="http://11.stmip.in/player/27222/winamp.pls" title="Winamp"><i class="icon winamp"></i></a>
+                   </div>
+				</div>
+			</div>
+		</div>
+              
+	</body>
+</html>
