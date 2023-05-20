@@ -1,90 +1,68 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js ie8 ie" lang="pt_BR"> <![endif]-->
-<!--[if IE 9]><html class="no-js ie9 ie" lang="pt_BR"> <![endif]-->
-<!--[if gt IE 9]><!-->
-<html class="no-js" lang="pt_BR">
-	<!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<title>host Águia</title>
-		<meta name="description" content="Streaming e hospedagem">
-		<meta name="robots" content="index, follow">
-		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale = 1.0">
 
-		<link id="theme" rel="stylesheet" href="02assets/css/webradio.css" type="text/css">
-		<link rel="shortcut icon" href="02assets/images/favicon_blue.png">
-        
-	<meta property="og:locale" content="pt_BR">
-	<meta property="og:url" content="http://hostaguia.com/">
-	<meta property="og:title" content="Host Águia">    
-    <meta property="og:description" content="Streaming e hospedagem"> 
-    <meta property="og:locale" content="pt_BR">
-
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="modernizr.js"></script>
-		<script src="lastfm.api.cache.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="jquery.mobile.js"></script>
-		<script src="jquery.jplayer.js"></script>
-                
-		<script type="text/javascript">  
-			var accounttype = 'pro';
-            var streamhost = '11.stmip.in';
-            var streamport = '27222';
-            var audioformat = 'mp3';
-            var autoplay = 'true';
-            var streamurl = {'mp3':'http://11.stmip.in:27222/stream'};
-            var streamtype = 'soutcast';
-            var statusurl = '02assets/status_cstrj.xsl';
-            var casterlogo = '0';
-             var casterlogo = '02assets/images/webradiogratis.png';
-			var ismobile = false;
-			var proservername = 'pro02';
-            var prousername = 'wslptdpk';
-			var plsolution = 'html, flash';
-				if (device.mobile()===true||device.tablet()===true)
-	{
-		ismobile=true;
-	$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '02assets/webradio.mobile.css') );
-	}
-		</script>
-		<script src="player_icecast.js"></script>
-		<script src="player.js"></script>
-
-	</head>
-	<body>        
-		<div id="wrapper">
-			<div id="footer">
-				<div style="margin-top:-5%" id="radio-player">
-					<div id="RadioPlayer"></div>
-					<div class="control">
-						<a class="play" style="display: none;"></a>
-						<a class="stop" style="display: block;"><div class="spinner"></div></a>
-					</div>
-					<div class="volume">
-						<a class="mute"></a>
-						<div class="bar">
-							<div class="vol" style="width:50px;"></div>
-						</div>
-						<br />
-						<span id="nowplaying">Você está ouvindo uma transmissão ao vivo ...</span>
-					</div>
-				</div>
-				<div id="playlists">
-					<div class='dsk'>
-					OUÇA EM OUTROS DISPOSITIVOS:
-					<br />
-                    
-					<a target="_blank" href="http://11.stmip.in/player/27222/android.m3u" title="Android"><i class="icon android2"></i></a>                    
-
-					<a target="_blank" href="http://11.stmip.in/player/27222/mediaplayer" title="Android"><i class="icon win"></i></a> 
-                    
-					<a target="_blank" href="http://11.stmip.in/player/27222/iphone.m3u" title="Android"><i class="icon ios2"></i></a>                                   
-                    <a target="_blank" href="http://11.stmip.in/player/27222/winamp.pls" title="Winamp"><i class="icon winamp"></i></a>
-                   </div>
-				</div>
-			</div>
-		</div>
-              
-	</body>
-</html>
+<style>
+	body { margin:0; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="lunaradio.min.js"></script>
+<div style="display: block; margin: 0 auto; margin-top: 0px;">
+	<div id="lunaradio" style='width:100%; height:100%;
+	-webkit-border-top-left-radius: 0px;
+	  -webkit-border-top-right-radius: 0px;
+	  -webkit-border-bottom-right-radius: 0px;
+	  -webkit-border-bottom-left-radius: 0px;
+	  -moz-border-radius-topleft: 0px;
+	  -moz-border-radius-topright: 0px;
+	  -moz-border-radius-bottomright: 0px;
+	  -moz-border-radius-bottomleft: 0px;
+	  border-top-left-radius: 0px;
+	  border-top-right-radius: 0px;
+	  border-bottom-right-radius: 0px;
+	  border-bottom-left-radius: 0px;
+	  border: none;'>
+	<div style="overflow:hidden; height:0px; width:0px;"><a href="https://radioplayer.luna-universe.com" title="native html internet radio player plugin">NATIVE INTERNET WEB RADIO PLAYER PLUGIN FOR SHOUTCAST, ICECAST AND RADIONOMY</a> powered by <a href="https://www.sodah.de" title="wordpress webdesign mainz">Sodah Webdesign Mainz</a></div>
+	</div>
+		
+<script>
+$("#lunaradio").lunaradio({
+	token: "Yl5Ta1dkIGVmZFdTX19TaltfZ18gVWFf",
+	userinterface: "big",	backgroundcolor: "#",
+	fontcolor: "#444444",
+	hightlightcolor: "#444444",
+	//fontname: "Open Sans",
+	fontname: "Aldrich",
+	//googlefont: "Open+Sans:300",
+	googlefont: "Aldrich",
+	fontratio: "0.5",
+	radioname: "Rádio Maximum",
+	scroll: "true",
+	coverimage: "https://radiobalance.streammaximum.com/axpp/logoapp.png",
+	onlycoverimage: "",
+	coverstyle: "circle",
+	usevisualizer: "real",
+	visualizertype: "6",
+	multicolorvisualizer: "true",	color1: "#F2BD17",
+	color2: "#F2BD17",
+	color3: "#F2BD17",
+	color4: "#F2BD17",
+	visualizeropacity: "0.7",
+	displayvisualizericon: "true",
+	itunestoken: "",
+	metadatatechnic: "stream-icy-meta",
+	ownmetadataurl: "",
+	streamurl: "https://cc3.streammaximum.com:20006",
+	CoverImage: "",
+	streamtype: "shoutcast2",	icecastmountpoint: "/stream",
+	radionomyid: "",
+	radionomyapikey: "",
+	radiojarid: "",
+	radiocoid: "sdef46f462",
+	shoutcastpath: "/live",
+	shoutcastid: "1",
+	streamsuffix: "",
+	metadatainterval: "20000",
+	volume: "98",
+	debug: "false",
+	usestreamcorsproxy: "true", 
+	corsproxy: "https://cors.streammaximum.com/",
+});
+</script>							
