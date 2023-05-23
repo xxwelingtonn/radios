@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css?family=Saira:700");
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  /* height: 80vh;*/
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+}
+body .dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+}
+body .dribbble img {
+  display: block;
+  height: 28px;
+}
+
+#container-master {
+max-width: 1100px;
+width: 100%;
+margin: auto;
+}
+
+.img-background {
+  position: fixed;
+  width: 100%;
+  top: 30%;
+  transition: top 1s;
+}
+
+.wrapper {
+  border: 1px orange;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.graph-container {
+  overflow: hidden;
+}
+.graph-container .graph {
+  /*border: 1px solid red;*/
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+  background-size: 4em 2em, 4em 2em;
+  background-color: black;
+  height: 40em;
+  perspective: 1000px;
+  margin-top: 20em;
+  transform: perspective(200px) rotateX(45deg) scale(2);
+}
+
+h1 {
+  /*border: 1px solid gray;*/
+  top: 1em;
+  background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ebf1f6", endColorstr="#d5ebfb",GradientType=0 );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+  transition: font-size 1s;
+  position: absolute;
+  text-transform: uppercase;
+}
+h1:after {
+  /* border: 1px solid red; */
+  background: none;
+  content: attr(data-text);
+  left: 0;
+  position: absolute;
+  text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5), 3px 1px 3px rgba(255, 0, 255, 0.85), -3px -2px 3px rgba(0, 0, 255, 0.85), 1px -2px 0 rgba(255, 255, 255, 0.8);
+  z-index: -3;
+}
+h1:before {
+  /* border: 1px solid green;*/
+  top: -0.9em;
+  content: " ";
+  position: absolute;
+  left: -0.9em;
+  width: 250px;
+  height: 210px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg") no-repeat;
+  background-size: 7.5em;
+  z-index: -4;
+}
+
+h2 {
+  /* border: 1px solid blue; */
+  top: 0em;
+  /* top: 8em; */
+  text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5), 2px 1px 2px rgba(255, 0, 255, 0.85), -3px -2px 3px rgba(0, 0, 255, 0.85), 1px -2px 0 rgba(255, 255, 255, 0.8);
+  color: #ff00ea;
+  font-size: 2em;
+  transform: rotateZ(-15deg);
+  position: absolute;
+  font-family: "Courgette", cursive;
+  transition: font-size 1s;
+  margin-top: 3.5em;
+}
+
+  h1 {
+    top: 0.5em;
+    font-size: 4em;
+  }
+  h1:before {
+    width: 480px;
+    height: 430px;
+  }
+
+  h2 {
+    top: 0em;
+    font-size: 3.5em;
+  }
+}
+
+.image-main {
+  /*border: 1px solid yellow;*/
+  position: relative;
+  width: 90%;
+
+}
+
+img.image-main {
+    width: 90%;
+}
+
+.container {
+  /* border: 1px solid yellow;*/
+  position: relative;
+  align: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+span {
+  /*border: 1px solid red;*/
+  font-size: 28px;
+  display: block;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  /* height: 3%; */
+}
+
+h3 {
+  /*border: 1px solid red;*/
+  display: block;
+  position: relative;
+  font-size: 60px;
+  background: linear-gradient(to bottom, #00f2ff 0%, #e2fbff 50%, #0a343f 51%, #0094f7 100%);
+  background-blend-mode: multiply;
+  background-size: 10px 60px;
+  background-repeat: repeat;
+  line-height: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3::before {
+  background: none;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+h3::after {
+  background: none;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5), 3px 1px 3px rgba(255, 0, 255, 0.85), -3px -2px 3px rgba(0, 0, 255, 0.85), 1px -2px 0 rgba(255, 255, 255, 0.8);
+  z-index: -2;
+}
+
+.activate {
+  display: table;
+  background: #32abe0;
+  box-shadow: 0 4px 20px rgba(50, 171, 224, 0.15);
+  line-height: 24px;
+  padding: 12px;
+  border-radius: 22px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+.activate .spaned {
+  display: inline-block;
+  vertical-align: top;
+    width: 36px;
+    height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 4px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.activate .spaned:before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.activate .spaned .svged {
+  position: absolute;
+  display: none;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  top: 50%;
+  margin: -6px 0 0 -6px;
+  z-index: 1;
+}
+.activate .spaned .svged:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    left: 0px;
+    fill: none;
+    margin: 0;
+    stroke: #fff;
+    stroke-width: 1px;
+    stroke-dashoffset: 94.248;
+    stroke-dasharray: 47.124;
+}
+.activate .spaned .svged:nth-child(2) {
+  fill: #32abe0;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.activate .spaned .svged:nth-child(3) {
+  fill: #32abe0;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+}
+.activate:hover {
+  box-shadow: 0 8px 24px rgba(50, 171, 224, 0.15);
+}
+.activate:hover .spaned .svged:nth-child(2) {
+  transform: translateY(-20px);
+}
+.activate:hover .spaned .svged:nth-child(3) {
+  transform: translateY(0);
+}
+.activate:active {
+  transform: scale(0.94);
+  box-shadow: 0 4px 16px rgba(63, 220, 117, 0.18);
+}
+.activate.loading .spaned {
+  background: none;
+  transition: background 0.1s ease 0.3s;
+}
+.deactive .spaned {
+  background: #fcbe1f !important;
+}
+.activate.loading .spaned:before {
+  transform: scale(1);
+}
+.activate.loading .spaned .svged:nth-child(1) {
+  animation: turn 1.6s linear infinite forwards, path 1.6s linear infinite forwards;
+}
+.activate.loading .spaned .svged:nth-child(2) {
+  transform: translateY(-20px);
+}
+.activate.loading .spaned .svged:nth-child(3) {
+  opacity: 0;
+  transform: translateY(0) scale(0.6);
+}
+.activate.loading ul {
+  transform: rotateX(90deg);
+}
+.activate.loading.done {
+  background: #3FDC75;
+  box-shadow: 0 4px 20px rgba(63, 220, 117, 0.15);
+}
+.activate.loading.done .spaned {
+  background: #fff;
+  transition: background 0.1s ease 0s;
+}
+.activate.loading.done .spaned:before {
+  background: #3FDC75;
+  transform: scale(0);
+}
+.activate.loading.done .spaned .svged:nth-child(1) {
+  animation: none;
+}
+.activate.loading.done .spaned .svged:nth-child(3) {
+  fill: #3FDC75;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s, opacity 0.4s ease 0.25s;
+}
+.activate.loading.done ul {
+  transform: rotateX(180deg);
+}
+.activate ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 28px;
+  margin-top: 5px;
+  width: 170px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+  font-size: 28px;
+}
+.activate ul li {
+  --rotateX: 0deg;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transform-origin: 50% 50%;
+  transform: rotateX(var(--rotateX)) translateZ(10px);
+}
+.activate ul li:nth-child(2) {
+  --rotateX: -90deg;
+}
+.activate ul li:nth-child(3) {
+  --rotateX: -180deg;
+}
+
+@keyframes turn {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes path {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*CUSTOM TNB*/
+
+.libertatem-stripe{
+  height: 450px;
+}
+
+.stripe-content-initial{
+    border: 3px solid #55ffdd;
+    color: #FFF;
+    padding: 8px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .stripe-content-initial p{
+    font-size: 2.2rem !important;
+  }
+
+  .stripe-content-fins{
+    border: 3px solid #55ffdd;
+    color: #FFF;
+    padding: 8px;
+    width: 90%;
+    text-align: left;
+    margin: 2rem auto 0;
+  }
+  .stripe-content-fins p{
+    font-size: 2rem !important;
+    padding: 0 30px;
+  }
+
+  .graph-container .graph {
+      height: 9em;
+      margin-top: 9em;
+  }
+
+  .stripe-server-2{
+      margin-top: 3.5rem;
+    }
+@media (max-width: 640px){
+  h3{
+    margin-top: 1.5rem;
+  }
+  .stripe-content-initial{
+    border: 3px solid #55ffdd;
+    color: #FFF;
+    padding: 8px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .stripe-content-initial p{
+    font-size: 1.6rem !important;
+  }
+
+  .stripe-content-fins{
+    border: 3px solid #55ffdd;
+    color: #FFF;
+    padding: 8px;
+    width: 90%;
+    margin: 2rem auto 0;
+  }
+  .stripe-content-fins p{
+    font-size: 1.6rem !important;
+    padding: 0 10px;
+    margin: 0;
+  }
+  .libertatem-stripe{
+    margin-top: 2rem;
+    height: 335px;
+  }
+  h1{
+    font-size: 3.2rem;
+  }
+  h2{
+    top: -40px;
+  }
+  h1:before {
+    /* border: 1px solid green;*/
+    top: -0.9em;
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 260px;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg") no-repeat;
+    background-size: 6.2em;
+    z-index: -4;
+  }
+
+  .stripe-server-2{
+    margin-top: 3.5rem;
+  }
+
+  .stripe-connect{
+    margin-top: 2.6rem;
+  }
+
+  .graph-container .graph {
+      height: 19em;
+      margin-top: 7em;
+  }
+}
